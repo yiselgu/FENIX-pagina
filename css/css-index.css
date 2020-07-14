@@ -1,0 +1,438 @@
+
+/*----------------    query pc   ------------------*/
+@media screen and (min-width: 600px) 
+{
+
+    a {
+      text-decoration: none;
+    }
+
+    nav {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    ul {
+        background: #555;
+        list-style: none;
+        margin: auto;
+        padding: 5px;
+        height: 60px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    li {
+        color: #fff;
+        background: #555;
+        display: block;
+        float:inline-end;;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+      
+    li a {
+      color: #fff;
+    }
+
+    li:hover,
+    li:focus-within {
+        background: #81C3D7;
+        cursor: pointer;
+    }
+
+    li:focus-within a {
+      outline: none;
+    }
+
+    ul li ul {
+      background: #555;
+      visibility: hidden;
+      opacity: 0;
+      min-width: 5rem;
+      position: absolute;
+      transition: all 0.5s ease;
+      margin-top: 1rem;
+      left: 0;
+      display: none;
+    }
+
+    ul li:hover > ul,
+    ul li:focus-within > ul,
+    ul li ul:hover,
+    ul li ul:focus {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+    }
+
+    ul li ul li {
+        clear: both;
+      width: 100%;
+    }
+      #footer{
+      /* position: sticky;  SIMPRE, PARA QUE PERMANEZCA EL PIE DE PAGINA*/
+        display: flex;
+        margin-top:20px;
+        background-color: #555;
+        color: #ffffff;
+        padding: 5px; /*ANCHO DEL PIE DE PAGINA*/
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+
+      .img-logo{
+        width:80px; 
+        float: left;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        position: absolute;}
+
+
+    .p1{color: hsla(0, 0%, 0%, 1);
+        padding: 20px;
+        text-align: center;
+        font-size: xx-large;}
+
+    @font-face{
+      font-family: justice;
+      src: url(../fuentes/justice_league/JUSTICE\ LEAGUE.ttf);
+    }    
+
+    div.p1{
+      font-family: justice;
+    }
+
+
+    .p2{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color:#5F6F81;
+      padding: 20px;
+      text-align: center;
+      font-size: larger;}
+
+
+
+      @font-face{
+        font-family: cherolina;
+        src: url(../fuentes/cherolina/Cherolina.ttf);
+      }    
+      
+      div.h2{
+        font-family: cherolina;
+      }
+      
+    .action-button{
+      padding: 15px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      color: #000;
+      margin:20px; }
+
+
+    .myButton {
+      box-shadow:inset 0px 1px 0px 0px #ffffff;
+      background:linear-gradient(to bottom, #999999 );
+      background-color:#999999;
+      border-radius:6px;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Verdana;
+      font-size:15px;
+      font-weight:bold;
+      padding:9px 10px;
+      text-decoration:none;}
+
+
+    .myButton:hover {
+      background:linear-gradient(to bottom, #555 5%, #555 100%);
+      background-color:#555;}
+
+
+    .myButton:active {
+      position:relative;
+      top:1px;}
+
+
+    #video{
+      display: flex;
+      padding-top: 30px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;}
+
+
+    .p3{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #ffffff;
+      text-align: center;
+      font-size: larger;
+      /*margin-left:10% ;                /* pocicion del texto de izquierda a derecha*/ 
+      padding: 1%;                      /*ancho del recuadro*/
+      background-color: #8EA3BF;     /*color del recuadro*/
+      border:solid #ffffff;}          si le quiero dar borde al recuadro*/
+
+      .compu1{
+        width:40%; 
+        float: none;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;}
+      
+    .p4{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #ffffff;
+      text-align: center;
+      font-size: larger;
+      margin-right: 50%;               /* pocicion del texto de izquierda a derecha*/ 
+      padding: 1%;                      /*ancho del recuadro*/
+      background-color: #BACBD9;}     /*color del recuadro*/
+    /*border:solid #730202;}          si le quiero dar borde al recuadro*/
+        
+    .compu1{
+      width:40%; 
+      float: none;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      margin-right: 10px;}  
+
+    .barra {
+        width: 100px;
+        height: 100px;
+        background: #16425B;
+        transition-property: width;
+        transition-duration: 5s;
+      }
+      .barra:hover {
+        width: 300px;
+      }
+
+    div>img{
+        position: relative;
+        animation-name: fenix;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+        animation-delay: initial;
+    }
+    @keyframes fenix{
+        0%   { left:0px; top:0px;}
+        25%  { left:50px; top:0px;}
+        50%  { left:50px; top:0px;}
+        75%  { left:50px; top:0px;}
+        100% { left:0px; top:0px;}
+    }
+
+    @keyframes fenixlog {
+      0%{background: #2F6690;}
+      50%{background: #3a7ca5; width: 30px; height: 30px; border-radius: 30%;}
+      100%{background:#81C3D7; width: 70px; height: 50px; border-radius: 30%;}
+      0%{transform: translate(0px) scale(1.4) rotate(80deg);}
+      50%{transform: translate(-250px) scale(1.2) rotate(40deg);}
+      100%{transform: translate(-350px) scale(1) rotate(0deg);}
+    }
+
+    img.fenixlog{
+      animation-name: fenixlog;
+      animation-duration: 5s;
+      height: 50px;
+      animation-iteration-count: infinite;
+      float: right;
+    }
+
+    /*----------------------- icino como fuentes---------------------*/
+    @font-face {
+      font-family: 'icomoon';
+      src:  url('../fonts/icomoon.eot');
+      src:  url('../fonts/icomoon.eot?8g62at#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+
+    .icon-pajaro1{
+      font-size: 50px;
+    }
+    .icon-pajaro2{
+      font-size: 50px;
+    }
+    .icon-pajaro3{
+      font-size: 50px;
+    }
+    [class^="icon-"], [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .icon-pajaro1 .path1:before {
+      content: "\e900";
+      color: rgb(0, 189, 205);
+    }
+    .icon-pajaro1 .path2:before {
+      content: "\e901";
+      margin-left: -1em;
+      color: rgb(0, 160, 181);
+    }
+    .icon-pajaro1 .path3:before {
+      content: "\e902";
+      margin-left: -1em;
+      color: rgb(0, 160, 181);
+    }
+    .icon-pajaro1 .path4:before {
+      content: "\e903";
+      margin-left: -1em;
+      color: rgb(0, 189, 205);
+    }
+    .icon-pajaro1 .path5:before {
+      content: "\e904";
+      margin-left: -1em;
+      color: rgb(0, 221, 231);
+    }
+    .icon-pajaro1 .path6:before {
+      content: "\e905";
+      margin-left: -1em;
+      color: rgb(0, 221, 231);
+    }
+    .icon-pajaro1 .path7:before {
+      content: "\e906";
+      margin-left: -1em;
+      color: rgb(0, 189, 205);
+    }
+    .icon-pajaro1 .path8:before {
+      content: "\e907";
+      margin-left: -1em;
+      color: rgb(95, 249, 254);
+    }
+    .icon-pajaro1 .path9:before {
+      content: "\e908";
+      margin-left: -1em;
+      color: rgb(0, 221, 231);
+    }
+    .icon-pajaro2 .path1:before {
+      content: "\e909";
+      color: rgb(225, 150, 15);
+    }
+    .icon-pajaro2 .path2:before {
+      content: "\e90a";
+      margin-left: -1em;
+      color: rgb(255, 233, 123);
+    }
+    .icon-pajaro2 .path3:before {
+      content: "\e90b";
+      margin-left: -1em;
+      color: rgb(244, 221, 69);
+    }
+    .icon-pajaro2 .path4:before {
+      content: "\e90c";
+      margin-left: -1em;
+      color: rgb(252, 193, 1);
+    }
+    .icon-pajaro2 .path5:before {
+      content: "\e90d";
+      margin-left: -1em;
+      color: rgb(239, 172, 8);
+    }
+    .icon-pajaro2 .path6:before {
+      content: "\e90e";
+      margin-left: -1em;
+      color: rgb(252, 193, 1);
+    }
+    .icon-pajaro2 .path7:before {
+      content: "\e90f";
+      margin-left: -1em;
+      color: rgb(239, 172, 8);
+    }
+    .icon-pajaro2 .path8:before {
+      content: "\e910";
+      margin-left: -1em;
+      color: rgb(244, 221, 69);
+    }
+    .icon-pajaro2 .path9:before {
+      content: "\e911";
+      margin-left: -1em;
+      color: rgb(244, 221, 69);
+    }
+    .icon-pajaro2 .path10:before {
+      content: "\e912";
+      margin-left: -1em;
+      color: rgb(252, 193, 1);
+    }
+    .icon-pajaro3 .path1:before {
+      content: "\e913";
+      color: rgb(230, 165, 81);
+    }
+    .icon-pajaro3 .path2:before {
+      content: "\e914";
+      margin-left: -1em;
+      color: rgb(195, 111, 80);
+    }
+    .icon-pajaro3 .path3:before {
+      content: "\e915";
+      margin-left: -1em;
+      color: rgb(255, 245, 140);
+    }
+    .icon-pajaro3 .path4:before {
+      content: "\e916";
+      margin-left: -1em;
+      color: rgb(255, 200, 90);
+    }
+    .icon-pajaro3 .path5:before {
+      content: "\e917";
+      margin-left: -1em;
+      color: rgb(195, 111, 80);
+    }
+    .icon-pajaro3 .path6:before {
+      content: "\e918";
+      margin-left: -1em;
+      color: rgb(125, 83, 67);
+    }
+    .icon-pajaro3 .path7:before {
+      content: "\e919";
+      margin-left: -1em;
+      color: rgb(210, 230, 251);
+    }
+    .icon-pajaro3 .path8:before {
+      content: "\e91a";
+      margin-left: -1em;
+      color: rgb(46, 38, 84);
+    }
+    .icon-pajaro3 .path9:before {
+      content: "\e91b";
+      margin-left: -1em;
+      color: rgb(240, 249, 255);
+    }
+    .icon-pajaro3 .path10:before {
+      content: "\e91c";
+      margin-left: -1em;
+      color: rgb(69, 61, 129);
+    }
+    .icon-pajaro3 .path11:before {
+      content: "\e91d";
+      margin-left: -1em;
+      color: rgb(210, 230, 251);
+    }
+    .icon-pajaro3 .path12:before {
+      content: "\e91e";
+      margin-left: -1em;
+      color: rgb(240, 249, 255);
+    }
+}
